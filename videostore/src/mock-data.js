@@ -3,7 +3,7 @@ let mock = [{
   name: "Uncharted: Drake's Fortune",
   price: "$29.99",
   platform: "Playstation",
-  image: 'uncharted.png'
+  image: '/images/uncharted.png'
 },
 {
   id: 2,
@@ -52,7 +52,7 @@ let mock = [{
   id: 8,
   name: "Forza Horizon",
   price: "$29.99",
-  country: "Xbox",
+  platform: "Xbox",
   image: 'forzahorizon.jpeg'
 },
 {
