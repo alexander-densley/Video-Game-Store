@@ -7,7 +7,7 @@
           <p>{{ product.platform }}</p>
         </div>
         <div class="image">
-          <img :src="product.image"/>
+          <img :src="'/img/'+product.image">
         </div>
         <div class="price">
           <h2>{{ product.price }}</h2>
