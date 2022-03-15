@@ -1,17 +1,16 @@
 <template>
-  <div class="wrapper">
-    <div class="products">
-      <div class="product" v-for="product in products" :key="product.id">
-        <div class="info">
-          <h1>{{ product.name }}</h1>
-          <p>{{ product.platform }}</p>
-        </div>
-        <div class="image">
-          <img :src="'/img/'+product.image">
-        </div>
-        <div class="price">
-          <h2>{{ product.price }}</h2>
-          <button v-on:click="addToCart(product)">Add to Cart</button>
+  <div id="header">
+    <div class="wrapper">
+      <div class="products">
+        <div class="product" v-for="product in products" :key="product.id">
+          <div class="info">
+            <h1>{{ product.name }}</h1>
+            <p>{{ product.platform }}</p>
+          </div>
+          <div class="price">
+            <h2>{{ product.price }}</h2>
+            <button v-on:click="addToCart(product)">Add to Cart</button>
+          </div>
         </div>
       </div>
     </div>
@@ -48,6 +47,7 @@ export default {
 </script>
 
 <style scoped>
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -81,7 +81,8 @@ export default {
 }
 
 .info {
-  background: #f2921d;
+  border-radius: 25px;
+  background: black;
   color: #000;
   padding: 10px 30px;
   height: 80px;
@@ -89,23 +90,28 @@ export default {
 
 .info h1 {
   font-size: 16px;
+  color: white;
 }
 
 .info h2 {
   font-size: 14px;
+  color: white;
 }
 
 .info p {
   margin: 0px;
+  color: white;
   font-size: 10px;
 }
 
 .price {
   display: flex;
+  padding-top: 25px;
 }
 
 button {
   height: 50px;
+  border-radius: 25px;
   background: #000;
   color: white;
   border: none;

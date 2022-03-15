@@ -35,3 +35,10 @@ export default {
   }
 }
 </script>
+
+<style>
+a, li{
+  color: #ffffff;
+}
+
+</style>
