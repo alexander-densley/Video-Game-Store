@@ -9,7 +9,7 @@
     <div id="side">
       <router-link to="/browse">
         <div class="menu-item browse">
-          <img src="../images/halo2.png">
+          <img src="/images/love.png">
           <p>Browse</p>
         </div>
       </router-link>
