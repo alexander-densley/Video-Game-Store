@@ -9,17 +9,19 @@
     <div id="side">
       <router-link to="/browse">
         <div class="menu-item browse">
-          <img src="/images/love.png">
           <p>Browse</p>
         </div>
       </router-link>
       <router-link to="/cart">
         <div class="menu-item">
-          <img src="/images/love.png">
           <p>{{this.$root.$data.sumItems}} items</p>
         </div>
       </router-link>
-    
+      <router-link to="/top3">
+        <div class = "menu-item top3">
+          <p>Top 3</p>
+        </div>
+      </router-link>
     </div>
   </div>
   <router-view />
@@ -92,13 +94,30 @@ body {
 .menu-item {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
+.menu-item:hover{
+  background-color: aliceblue;
+  padding:10px;
+}
+.menu-item:visited, link {
+  text-decoration: none;
+}
+p :visited, p:link, p:hover{
+  text-decoration: none;
+}
+
 
 .menu-item p {
   margin: 0px;
+  color: white;
 }
 
 .browse {
   margin-right: 50px;
+}
+
+.top3 {
+  margin-left: 50px
 }
 </style>

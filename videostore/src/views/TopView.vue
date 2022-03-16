@@ -1,45 +1,33 @@
 <template>
-  <div class="wrapper">
-    <div class="products">
-      <div class="product" v-for="product in products" :key="product.id">
+  <div id="header">
+    <div class="wrapper">
+      <div class="products">
         <div class="info">
-          <h1>{{ product.name }}</h1>
-          <p>{{ product.platform }}</p>
+        <h1>Sly Cooper</h1>
+        <p>Playstation</p>
         </div>
-       
-        <div class="price">
-          <h2>{{ product.price }}</h2>
-          <button v-on:click="removeFromCart(product)">Remove From Cart</button>
+        <br>
+        <div class="info">
+        <h1>Fable</h1>
+        <p>Xbox</p>
+        </div>
+        <br>
+        <div class="info">
+        <h1>Mario Kart</h1>
+        <p>Nintendo</p>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "CartList",
-  props: {
-    products: Array,
-  },
-  methods: {
-    removeFromCart: function (product) {
-        let p = 0;
-        for (let index in this.$root.$data.cart){
-            if(this.$root.$data.cart[index].id == product.id){
-                p = index;
-            }
-        }
-        let total = this.$root.$data.cart[p].quantity
 
-        this.$root.$data.sumItems -= total;  
-        this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(product), 1);
-    }
-  }
-};
-</script>
 
 <style scoped>
+.info{
+    margin: 10px;
+}
+
 .wrapper {
   display: flex;
   align-items: center;

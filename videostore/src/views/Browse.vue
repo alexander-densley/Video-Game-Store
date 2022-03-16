@@ -37,8 +37,14 @@ export default {
 </script>
 
 <style>
+.pure-menu-list p{
+  color: white;
+}
+.pure-menu-link {
+  color: white;
+}
 a, li{
-  color: #ffffff;
+  color: white;
 }
 
 </style>
