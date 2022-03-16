@@ -75,7 +75,8 @@ export default {
 }
 
 .info {
-  background: #f2921d;
+  border-radius: 25px;
+  background: black;
   color: #000;
   padding: 10px 30px;
   height: 80px;
@@ -83,23 +84,28 @@ export default {
 
 .info h1 {
   font-size: 16px;
+  color: white;
 }
 
 .info h2 {
   font-size: 14px;
+  color: white;
 }
 
 .info p {
   margin: 0px;
+  color: white;
   font-size: 10px;
 }
 
 .price {
   display: flex;
+  padding-top: 25px;
 }
 
 button {
   height: 50px;
+  border-radius: 25px;
   background: #000;
   color: white;
   border: none;

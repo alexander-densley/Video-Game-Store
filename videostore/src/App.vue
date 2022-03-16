@@ -45,11 +45,14 @@ export default {
 
 
 <style>
+
 * {
   box-sizing: border-box;
 }
 
 body {
+    background-color: grey;
+
   margin: 50px 100px;
 
 }
